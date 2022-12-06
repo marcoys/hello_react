@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+import MyComponent from './MyComponent'
+import Counter from './Counter'
+import Say from './Say';
+import IterationSample from './IterationSample.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// function App() {
+//   const name = '리액트';
+
+//   return (
+//     <>
+//       <ValidationSample />
+//     </> 
+//   );
+// }
+
+class App extends Component {
+  render() {
+    return (
+      <>
+        <IterationSample />
+      </>
+    )
+  }
 }
 
 export default App;
+
